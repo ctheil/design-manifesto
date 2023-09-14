@@ -8,10 +8,6 @@ import { useState } from "react";
 const Article = () => {
   const [scrollState, setScrollState] = useState(false);
 
-  const scrollListener = (e) => {
-    // check is in view, check scroll postiion
-    console.log(e);
-  };
   return (
     <div className="article__container">
       {!scrollState && <div className="card__box" />}

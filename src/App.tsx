@@ -4,13 +4,13 @@ import Article from "./components/Article";
 function App() {
   return (
     <section className="main">
-      <Article />
-      <Article />
-      <div className="intro"></div>
-      <div className="flex">
-        <div className="title"></div>
-        <div className="body"></div>
-      </div>
+        <Article />
+        <Article />
+        <div className="intro"></div>
+        <div className="flex">
+          <div className="title"></div>
+          <div className="body"></div>
+        </div>
     </section>
   );
 }
