@@ -1,6 +1,6 @@
 import "../App.css";
 type CardProps = {
-  img: JSX.Element;
+  img: string;
   alt: string;
   state: boolean;
 };
