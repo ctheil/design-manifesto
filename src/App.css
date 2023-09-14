@@ -85,24 +85,24 @@ body {
 }
 .card__box {
   flex: 0.5;
-  display: flex;
   align-content: center;
   justify-content: center;
 }
 .card__img {
-  flex: 1;
+  width: 100%;
+  height: auto;
 }
 
 .relative {
   position: relative;
+  max-width: 720px;
+  width: 720px;
 }
 .fixed {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 50%;
+  width: 100%;
   aspect-ratio: 1;
+
   margin: auto 0;
   max-width: 720px;
 }

@@ -6,10 +6,10 @@ import card from "../assets/titlecard-1.png";
 import { useState } from "react";
 
 const Article = () => {
-  const [scrollState, setScrollState] = useState(false);
+  const [scrollState, setScrollState] = useState(true);
 
   const scrollListener = (e) => {
-      // check is in view, check scroll postiion
+    // check is in view, check scroll postiion
     console.log(e);
   };
   return (
