@@ -67,6 +67,42 @@ body {
   margin-top: 100px;
   font-size: 1rem;
 }
-.poster {
-    ;
+
+.article__container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.content__box {
+  flex: 0.5;
+}
+.content__p {
+  max-width: 70ch;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.card__box {
+  flex: 0.5;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.card__img {
+  flex: 1;
+}
+
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  aspect-ratio: 1;
+  margin: auto 0;
+  max-width: 720px;
 }
