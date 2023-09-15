@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,800;1,900&display=swap");
 #root {
   width: 100%;
   background-clip: red;
@@ -8,6 +9,7 @@
 body {
   width: 100%;
   height: 100%;
+  padding-top: 3rem;
 }
 .main {
   padding: 1rem 3rem;
@@ -31,8 +33,13 @@ body {
   height: 100%;
 }
 .nav {
-  background-color: yellow;
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
 }
 .title {
   height: 100%;
@@ -69,6 +76,7 @@ body {
 }
 
 .article__container {
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   max-width: 1440px;
@@ -78,10 +86,53 @@ body {
 .content__box {
   flex: 0.5;
 }
+.content__title {
+  font-weight: 100;
+  font-size: 2.588rem;
+  margin: 0;
+  color: #eee;
+}
+.content__author {
+  font-size: 1rem;
+  margin: 0 0 1.5rem 2rem;
+  color: #aaa;
+}
 .content__p {
   max-width: 70ch;
   font-size: 1rem;
   line-height: 1.6;
+  text-indent: 1rem;
+  margin-bottom: 2rem;
+  color: #bbb;
+  padding: 0rem 1rem;
+}
+.content__p strong,
+.content__p em,
+.content__p blockquote {
+  color: #7efcc7;
+}
+
+.content__p blockquote {
+  text-indent: 0;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+.content__p:has(span) {
+  text-indent: 0;
+  margin: 3rem 0 0 0;
+}
+.content__p span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin: 3rem 0 0 0;
+  color: #7efcc7;
+}
+.content__p--strong {
+  font-size: 2rem;
+}
+.content__p--strong {
+  font-size: 2rem;
 }
 .card__box {
   flex: 0.5;
@@ -94,12 +145,11 @@ body {
 .relative {
   position: relative;
   max-width: 720px;
-  margin-top: auto;
 }
 .fixed {
   position: fixed;
 
   margin: auto 0;
   max-width: 720px;
-  top: 0
+  top: 0;
 }
