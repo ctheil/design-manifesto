@@ -8,8 +8,7 @@ type ContentProps = {
 const ArticleContent = ({ content, title, author }: ContentProps) => {
   console.log(content, title, author);
   /*
-   * Author should be custom component that has profile picture or something
-   * and links back to personal portfolio
+   * Author should be cutsom component that links back to portfolio
    * */
   return (
     <div className="content__box">
