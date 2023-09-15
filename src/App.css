@@ -94,10 +94,12 @@ body {
 .relative {
   position: relative;
   max-width: 720px;
+  margin-top: auto;
 }
 .fixed {
   position: fixed;
 
   margin: auto 0;
   max-width: 720px;
+  top: 0
 }

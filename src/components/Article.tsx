@@ -3,13 +3,60 @@ import "./Article.module.css";
 import ArticleContent from "./ArticleContent";
 import TitleCard from "./TitleCard";
 import card from "../assets/titlecard-1.png";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
-const Article = () => {
-  const [scrollState, setScrollState] = useState(false);
+type ArticleProps = {
+  key: number;
+};
+
+const Article = ({ key }: ArticleProps) => {
+  const [scrollState, setScrollState] = useState(true);
+  const divRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+
+  /*
+   * Need to set this up so that whenever the
+   * current pos is in 'from top to bottom || from bottom to top'
+   * to fix, else to relative and set position where left off,
+   * so that on reenter know where it is.
+   * */
+  useEffect(() => {
+    const element = divRef.current;
+    if (!element) {
+      return;
+    }
+    gsap.fromTo(
+      element.querySelector(".card__img"),
+      {
+        opacity: 1,
+        y: -20,
+      },
+      {
+        opacity: 1,
+        y: "25%",
+        onStart: () => {
+          console.log("start");
+          setScrollState(false);
+        },
+        onComplete: () => {
+          console.log("complete");
+          setScrollState(true);
+        },
+        scrollTrigger: {
+          trigger: element.querySelector(".content__box"),
+          start: "top top",
+          end: "bottom center",
+          scrub: true,
+          markers: true,
+        },
+      },
+    );
+  }, []);
 
   return (
-    <div className="article__container">
+    <div style={{ zIndex: key }} ref={divRef} className="article__container">
       {!scrollState && <div className="card__box" />}
       <TitleCard state={scrollState} img={card} alt="titlecard-1" />
       <ArticleContent>
