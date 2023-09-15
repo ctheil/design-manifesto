@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,900;1,100;1,400;1,700;1,900&display=swap");
 #root {
   width: 100%;
   background-clip: red;
   height: 100%;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -48,8 +48,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.intro {
-}
+
 .body {
   flex: 0.5;
 }
@@ -87,10 +86,11 @@ body {
   flex: 0.5;
 }
 .content__title {
-  font-weight: 100;
+  font-weight: 800;
   font-size: 2.588rem;
   margin: 0;
   color: #eee;
+  font-family: "Playfair Dispaly", serif;
 }
 .content__author {
   font-size: 1rem;
@@ -99,12 +99,14 @@ body {
 }
 .content__p {
   max-width: 70ch;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 32px;
+  letter-spacing: 0.01em;
   text-indent: 1rem;
   margin-bottom: 2rem;
   color: #bbb;
   padding: 0rem 1rem;
+  font-weight: 400;
 }
 .content__p strong,
 .content__p em,
@@ -127,6 +129,7 @@ body {
   font-weight: 200;
   margin: 3rem 0 0 0;
   color: #7efcc7;
+  font-family: "Playfair Dispaly", serif;
 }
 .content__p--strong {
   font-size: 2rem;
@@ -137,6 +140,7 @@ body {
 .card__box {
   flex: 0.5;
   text-align: center;
+  margin-top: 1rem;
 }
 .card__img {
   width: 90%;
@@ -152,4 +156,81 @@ body {
   margin: auto 0;
   max-width: 720px;
   top: 0;
+}
+
+/*
+ * AUTHOR
+ * */
+
+.author__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0 1rem 0;
+  gap: 1rem;
+  color: #ccc;
+}
+.author__content {
+  display: flex;
+  flex-direction: column;
+}
+.author__position {
+  margin: 0;
+}
+.author__name-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0;
+}
+.author__name {
+  margin: 0;
+  font-weight: 900;
+  transition: all 0.2s;
+}
+.author__name:hover {
+  color: #7efcc7;
+}
+.author__est {
+  margin: 0;
+  color: #ccc;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+.author__img-container {
+  height: 75px;
+  width: 75px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.author__img {
+  width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.author__icon {
+  font-size: 1.5rem;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+.socials a {
+  text-decoration: none;
+  color: #eee;
+  transition: all 0.2s;
+  margin: 0;
+  padding: 0;
+}
+.socials a:hover,
+.socials a:active {
+  color: #7efcc7;
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./Nav";
 import Article from "./components/Article";
+import CalebImg from "./assets/authors/theil_toinstaprofilephoto_001 2.png";
 
 function App() {
   return (
@@ -9,7 +10,17 @@ function App() {
       <Article
         key={1}
         title="UX as a Playground of Challenges"
-        author="Caleb Theil"
+        author={{
+          name: "Caleb Theil",
+          img: CalebImg,
+          est: "5 minute read",
+          url: "https://www.calebtheil.com",
+          position: "Full stack developer",
+          links: [
+            { type: "linkedin", url: "https://www.linkedin.com/in/ctheil/" },
+            { type: "external", url: "https://www.calebtheil.com" },
+          ],
+        }}
         content={[
           "In the realm of User Experience (UX) design, there's a palpable trend towards homogeneity. Software interfaces increasingly look and feel identical, as if carved from the same digital block. This seems efficient, but at what cost? This essay poses a <strong className='content__p--strong'>central question</strong>: What if the objective of UX design isn't to solve problems but to <em className='content__p--em'>create</em> them?",
 

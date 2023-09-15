@@ -3,19 +3,19 @@ import "./Article.module.css";
 import ArticleContent from "./ArticleContent";
 import TitleCard from "./TitleCard";
 import card from "../assets/titlecard-1.png";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Author } from "./Author";
 
 type ArticleProps = {
   key: number;
   content: string[];
   title: string;
-  author: string;
+  author: Author;
 };
 
 const Article = ({ key, content, title, author }: ArticleProps) => {
-  const [scrollState, setScrollState] = useState(true);
   const divRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
@@ -33,18 +33,18 @@ const Article = ({ key, content, title, author }: ArticleProps) => {
     gsap.fromTo(
       element.querySelector(".card__img"),
       {
-        opacity: 1,
         y: "0%",
       },
       {
-        opacity: 1,
-        y: "50%",
+        //ease: Elastic.easeInOut,
+        y: "150%",
         scrollTrigger: {
           trigger: element.querySelector(".content__box"),
           start: "top top",
           end: "bottom center",
+
           scrub: true,
-          markers: true,
+          //markers: true,
           toggleActions: "restart pause resume pause",
           onUpdate: (self) => {
             // const progress = self.progress;
@@ -57,8 +57,7 @@ const Article = ({ key, content, title, author }: ArticleProps) => {
 
   return (
     <div style={{ zIndex: key }} ref={divRef} className="article__container">
-      {!scrollState && <div className="card__box" />}
-      <TitleCard state={scrollState} img={card} alt="titlecard-1" />
+      <TitleCard img={card} alt="titlecard-1" />
       <ArticleContent title={title} author={author} content={content} />
     </div>
   );

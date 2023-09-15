@@ -1,8 +1,14 @@
 import "../App.css";
+import Author from "./Author";
 type ContentProps = {
   content: string[];
   title: string;
-  author: string;
+  author: {
+    name: string;
+    img: string;
+    est: string;
+    url: string;
+  };
 };
 
 const ArticleContent = ({ content, title, author }: ContentProps) => {
@@ -14,7 +20,7 @@ const ArticleContent = ({ content, title, author }: ContentProps) => {
     <div className="content__box">
       <>
         <h2 className="content__title">{title}</h2>
-        <h3 className="content__author">{`by: ${author}`}</h3>
+        <Author author={author} />
         <>
           {content.map((p, i) => (
             <p
