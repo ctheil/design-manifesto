@@ -234,3 +234,9 @@ body {
 .socials a:active {
   color: #7efcc7;
 }
+
+@media only screen and (max-width: 900px) {
+  .article__container {
+    flex-direction: column;
+  }
+}

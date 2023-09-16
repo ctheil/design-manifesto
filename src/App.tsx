@@ -14,7 +14,6 @@ function App() {
           name: "Caleb Theil",
           img: CalebImg,
           est: "5 minute read",
-          url: "https://www.calebtheil.com",
           position: "Full stack developer",
           links: [
             { type: "linkedin", url: "https://www.linkedin.com/in/ctheil/" },
@@ -44,7 +43,13 @@ function App() {
       <Article
         key={2}
         title="Lorem Ipsum"
-        author="Some Latin Author"
+        author={{
+          name: "Some latin author",
+          img: "",
+          est: "Do you know latin? then 5 min",
+          position: "UX Designer",
+          links: [{ type: "linkedin", url: "https://www.linkedin.com" }],
+        }}
         content={[
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et risus scelerisque, viverra lectus et, gravida nulla. Nam lobortis libero tellus, at efficitur orci lobortis vitae. Donec dignissim augue augue, vitae commodo mi interdum quis. Nullam elit orci, iaculis nec mi at, laoreet posuere mi. Sed maximus mi massa, ut volutpat dolor aliquam eu. Praesent accumsan dignissim erat, sit amet consectetur mauris laoreet a. Nulla facilisi.",
           "Sed ac finibus justo, et condimentum turpis. Nam et urna vel risus consectetur aliquam. Donec leo lorem, convallis quis dui non, varius interdum risus. Etiam faucibus maximus vulputate. In eget malesuada nisi. Duis semper, diam vitae molestie feugiat, lorem nulla mollis felis, sed pretium leo libero nec ipsum. Aenean nulla ex, venenatis a faucibus at, bibendum vitae lorem. Integer aliquam sollicitudin leo, non luctus lacus posuere eu. Nullam nec facilisis tortor. Quisque et purus leo. Curabitur iaculis blandit iaculis. Duis ut mauris sodales, porta nunc et, ullamcorper velit. In tincidunt et nisl et ultricies. Quisque nec purus sagittis, egestas mauris et, elementum diam.",

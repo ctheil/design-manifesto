@@ -7,15 +7,12 @@ type ContentProps = {
     name: string;
     img: string;
     est: string;
-    url: string;
+    links: { url: string; type: "linkedin" | "external" }[];
+    position: string;
   };
 };
 
 const ArticleContent = ({ content, title, author }: ContentProps) => {
-  console.log(content, title, author);
-  /*
-   * Author should be cutsom component that links back to portfolio
-   * */
   return (
     <div className="content__box">
       <>

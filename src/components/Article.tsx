@@ -15,48 +15,39 @@ type ArticleProps = {
   author: Author;
 };
 
-const Article = ({ key, content, title, author }: ArticleProps) => {
+const Article = ({ content, title, author }: ArticleProps) => {
   const divRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  /*
-   * Need to set this up so that whenever the
-   * current pos is in 'from top to bottom || from bottom to top'
-   * to fix, else to relative and set position where left off,
-   * so that on reenter know where it is.
-   * */
   useEffect(() => {
+    if (window.innerWidth < 900) {
+      return;
+    }
     const element = divRef.current;
     if (!element) {
       return;
     }
     gsap.fromTo(
-      element.querySelector(".card__img"),
+      (element as Element).querySelector(".card__img"),
       {
         y: "0%",
       },
       {
-        //ease: Elastic.easeInOut,
         y: "150%",
         scrollTrigger: {
-          trigger: element.querySelector(".content__box"),
+          trigger: (element as Element).querySelector(".content__box"),
           start: "top top",
           end: "bottom center",
-
           scrub: true,
           //markers: true,
           toggleActions: "restart pause resume pause",
-          onUpdate: (self) => {
-            // const progress = self.progress;
-            // console.log(progress);
-          },
         },
       },
     );
   }, []);
 
   return (
-    <div style={{ zIndex: key }} ref={divRef} className="article__container">
+    <div ref={divRef} className="article__container">
       <TitleCard img={card} alt="titlecard-1" />
       <ArticleContent title={title} author={author} content={content} />
     </div>
