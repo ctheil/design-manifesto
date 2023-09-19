@@ -15,6 +15,7 @@ function App() {
           img: CalebImg,
           est: "5 minute read",
           position: "Full stack developer",
+          url: "https://www.calebtheil.com",
           links: [
             { type: "linkedin", url: "https://www.linkedin.com/in/ctheil/" },
             { type: "external", url: "https://www.calebtheil.com" },

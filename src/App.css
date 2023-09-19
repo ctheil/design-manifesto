@@ -183,12 +183,18 @@ body {
   gap: 1.2rem;
   margin: 0;
 }
-.author__name {
+.author__name,
+.author__name--link {
   margin: 0;
   font-weight: 900;
   transition: all 0.2s;
+  color: #eee;
 }
-.author__name:hover {
+.author__name--link {
+    cursor: pointer;
+}
+.author__name:hover,
+.author__name--link:hover {
   color: #7efcc7;
 }
 .author__est {

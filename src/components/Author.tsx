@@ -14,6 +14,7 @@ export interface Author {
   est: string;
   position: string;
   links: Link[];
+  url?: string;
 }
 
 type AuthorProps = {
@@ -31,7 +32,13 @@ const Author = ({ author }: AuthorProps) => {
       </div>
       <div className="author__content">
         <div className="author__name-box">
-          <p className="author__name">{author.name} </p>
+          {author.url ? (
+            <a target="_blank" href={author.url} className="author__name--link">
+              {author.name}
+            </a>
+          ) : (
+            <p className="author__name">{author.name}</p>
+          )}
           <p className="author__position">{author.position}</p>
         </div>
         <div className="socials">
