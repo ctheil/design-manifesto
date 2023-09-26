@@ -12,17 +12,31 @@
   color: #f96c5a;
 }
 
-.beth p {
+.beth p,
+.beth__subhead {
   font-family: "Playfair Dispaly", serif;
   line-height: normal;
-  font-size: 13px;
+  font-size: 18px;
   text-indent: 0;
   max-width: 100%;
+  font-weight: 400;
 }
+
 .beth h2 {
-  text-decoration: line-through;
   font-family: "bebas-neue-by-fontfabric", sans-serif;
   color: #bbb;
+  position: relative;
+  display: inline;
+}
+.beth h2::after {
+  background-color: #f96c5a;
+  content: "";
+  position: absolute;
+  top: 39%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 5px;
 }
 
 .beth__line {
