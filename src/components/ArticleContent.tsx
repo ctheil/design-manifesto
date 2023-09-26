@@ -1,4 +1,6 @@
 import "../App.css";
+import "../styles/gerardo.css";
+import "../styles/beth.css";
 import Author from "./Author";
 type ContentProps = {
   content: string[];
@@ -14,7 +16,7 @@ type ContentProps = {
 
 const ArticleContent = ({ content, title, author }: ContentProps) => {
   return (
-    <div className="content__box">
+    <div className={`content__box`}>
       <>
         <h2 className="content__title">{title}</h2>
         <Author author={author} />

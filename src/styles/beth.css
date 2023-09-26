@@ -1,0 +1,34 @@
+@import url("https://use.typekit.net/juy7bti.css");
+.beth__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beth__flex img {
+  /* height: 312px; */
+  width: 50%;
+}
+.beth a {
+  color: #f96c5a;
+}
+
+.beth p {
+  font-family: "Playfair Dispaly", serif;
+  line-height: normal;
+  font-size: 13px;
+  text-indent: 0;
+  max-width: 100%;
+}
+.beth h2 {
+  text-decoration: line-through;
+  font-family: "bebas-neue-by-fontfabric", sans-serif;
+  color: #bbb;
+}
+
+.beth__line {
+  border-color: #f96c5a;
+}
+
+.beth__subp {
+  margin-bottom: 12px;
+}

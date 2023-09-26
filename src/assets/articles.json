@@ -1,0 +1,98 @@
+[
+  {
+    "title": "UX as a Playground of Challenges",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/calebtheil__title-card_backdrop.jpeg?raw=true",
+    "titleCardProps": "unique",
+    "classParent": "caleb",
+    "content": [
+      "In the realm of User Experience (UX) design, there's a palpable trend towards homogeneity. Software interfaces increasingly look and feel identical, as if carved from the same digital block. This seems efficient, but at what cost? This essay poses a <strong class='content__p--strong'>central question</strong>: What if the objective of UX design isn't to solve problems but to <em class='content__p--em'>create</em> them?",
+
+      "<span class='content__p--subhead'>The Double-Edged Sword of Predictability in UX</span>",
+
+      "Uniformity in UX is a double-edged sword. On one surface, it's a mark of user-centric design, streamlining interfaces for ease and accessibility. However, this perceived benefit comes with risks. Consider the nature of monocultures in agriculture. Fields full of a single crop may yield high output in the short term, but they're vulnerable to a single disease or change in condition that could render the entire field useless. Similarly, a standardized UX approach faces the potential risk that a single technological change could render it <em class='content__p--em'>obsolete</em>, causing a domino effect of failures across the digital ecosystem.",
+
+      "<blockquote class='content__p--quote'>This brings us to Dadaism, an early 20th-century art movement that reveled in the absurd and the irrational. Dadaism urged us to embrace chaos, unpredictability, and rebellion.</blockquote> Imagine applying these Dadaist principles to UX design. The merit of unpredictability in design isn't just artistic; it can also lead to innovative results by challenging conventions and breaking the monotony. An unpredictable UX may demand deeper engagement from the user, triggering a sense of exploration akin to the 'uncomfortable' architectural designs proposed by Arakawa and Gins.",
+
+      "<span class='content__p--subhead'>The Case of Digital Authentication</span>",
+
+      "Now, let's delve into a real-world example that represents a microcosm of the larger issue: digital authentication. Passwords, fingerprint scans, and facial recognition have become the default methods for proving our identity online. However, our reliance on these tried-and-tested solutions <strong class='content__p--strong'>blinds us</strong> to their flaws, from security vulnerabilities to the stifling of innovation. Isn't it time to think <em class='content__p--em'>outside the login box</em>?",
+
+      "Designing with a sense of individuality, fostering exploration, and injecting a sense of play can be groundbreaking approaches in UX design. Tailoring experiences for unique user bases rather than a generic 'average user' can lead to enriched user experiences. For instance, the preference for pattern-dragging pins among Android users and FaceID among iPhone users isn't just a matter of availability but also a reflection of <strong class='content__p--strong'>different user philosophies and comfort levels</strong>.",
+
+      "Problems aren't just obstacles; they can be catalysts for creativity. A problem in design is an invitation for innovative solutions. For instance, a non-linear storytelling website may initially confuse users, but it also provides an engaging experience that encourages exploration and discovery. The 'problems' we design can become puzzles that <em class='content__p--em'>captivate</em> the user’s attention and enrich their digital journey.",
+
+      "In conclusion, as we move forward into an increasingly digital age, it's crucial for designers to step bravely into the realm of unpredictability. We must design not just for ease and efficiency but also for engagement, curiosity, and individuality. Instead of mindlessly contributing to the UX monoculture, let's break away and embrace a Dadaist spirit of rebellion, chaos, and unpredictability. After all, a diverse UX landscape is not just more resilient; it's also <em class='content__p--em'>infinitely more interesting</em>."
+    ],
+    "author": {
+      "name": "Caleb Theil",
+      "img": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/authors/theil_toinstaprofilephoto_001%202.png?raw=true",
+      "est": "5 minute read",
+      "position": "Full stack developer",
+      "url": "https://www.calebtheil.com",
+      "links": [
+        { "type": "linkedin", "url": "https://www.linkedin.com/in/ctheil/" },
+        { "type": "external", "url": "https://www.calebtheil.com" }
+      ]
+    }
+  },
+  {
+    "title": "Accessibility VS Aesthetics",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/gerardo__title-card.png?raw=true",
+    "titleCardProps": "normal",
+    "classParent": "gerardo",
+    "content": [
+      "Designers should believe that design should be a harmonious blend of aesthetics and accessibility, rejecting the notion that we must sacrifice aesthetics in order to please everyone aesthetically. In a world where aesthetics and accessibility coexist, we champion the idea that inclusive design enhances user experiences, fosters innovation, and benefits everyone.",
+      "<div class='gerardo__flex'><div class='gerardo__img'><img src='https://raw.githubusercontent.com/ctheil/design-manifesto/4a161c323f10c2655ae80eb71bba632bb73fdfad/src/assets/gerardo__img-1.svg' alt='touch'/></div><div><span class='gerardo__subhead'>Aesthetics Fuel Engagement and Delight:</span><br>Aesthetics are the soul of design, captivating users attention and sparking emotional connections. We acknowledge that visually pleasing designs hold the power to engage, inspire, and delight. By embracing aesthetics in design, we create interfaces that users genuinely enjoy interacting with, enhancing their overall experience. The allure of aesthetics catalyzes user engagement, making information more accessible and memorable.1</div></div>",
+      "<div class='gerardo__flex'><div><span class='gerardo__subhead'>Inclusive Design is Inherently Aesthetic:</span><br>Inclusivity and aesthetics are not adversaries; they are symbiotic. We contend that inclusive design is an aesthetic pursuit in itself. We create elegant and user-friendly solutions that transcend limitations by ensuring that our designs cater to diverse user needs. Inclusive fosters innovation by pushing designers to think creatively, resulting in visually compelling products. We assert that the pursuit of accessibility drives the evolution of aesthetics.2</div><div class='gerardo__img'><img src='https://raw.githubusercontent.com/ctheil/design-manifesto/4a161c323f10c2655ae80eb71bba632bb73fdfad/src/assets/gerardo__img-2.svg' alt='touch'/></div></div>",
+      "<blockquote class='gerardo__quote'>“Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that’s why it is so complicated.”-Paul Rand 3 </blockquote>",
+      "<span class='gerardo__subhead'>Aesthetic Inclusivity Drives Social Change:</span>",
+      "<strong class='gerardo__strong'>We understand that design is not just about aesthetics—it's about shaping our world.</strong> By refusing to sacrifice aesthetics for accessibility, we challenge the status quo and drive positive social change. <strong class='gerardo__strong'>We advocate for designs that respect the dignity of every user,</strong> breaking down barriers and fostering a more inclusive society. Aesthetics empowers people with disabilities, demonstrating our commitment to a world where design is for all but not appealing to all. ",
+      "<span class='gerardo__subhead'>Accessibility Benefits All Users</span>",
+      "<strong class='gerardo__strong'>We stand by the belief that accessible design is suitable for everyone. Rather than constraining creativity</strong>, accessibility enhances it. The principles of accessible format, such as clarity, simplicity, and consistency, lead to better usability, readability, and overall user satisfaction. Accessibility empowers all users, including those with disabilities, to access and enjoy digital content effortlessly. Inclusive design fosters an environment where everyone can participate and contribute.3",
+      "<span class='gerardo__subhead'>Empathy as a Design Principle</span>",
+      "We uphold the principle of empathy in design. We recognize that aesthetics alone cannot create meaningful experiences. It is our duty as designers to empathize with our users, understanding their diverse needs and challenges. <strong class='gerardo__strong'>This empathy informs our design decisions, ensuring that aesthetics and accessibility coexist seamlessly</strong>. We reject the false dichotomy of aesthetics versus accessibility and embrace a holistic approach that puts users at the forefront of our design process.",
+      "<span class='gerardo__subhead'>Conclusion</span>",
+      "In conclusion, the relationship between aesthetics and accessibility in design should be important to every designer, especially web designers. We reject the notion that we must sacrifice one for the other, recognizing that inclusive design not only benefits those with disabilities but enhances the experience for all. By combining aesthetics with accessibility, we create designs that inspire, engage, and uplift while fostering a more inclusive and equitable world for everyone through the experience of a web page and creating aesthetics in a web page that will be visible and functional to all but not visually appealing to everyone.",
+      "<span class='gerardo__subhead--ital'>Generated by Chat GPT</span><br> <br><span class='gerardo__footnotes'>3.Interaction Design Foundation. (2023, September 4). What is aesthetics?. The Interaction Design Foundation. https://www.interaction-design.org/literature/topics/aesthetics</span><br><br><span class='gerardo__footnotes'>1.Mortensen, D. H., & Spillers, F. (2023, September 25). 3 reasons why accessible design is good for all. The Interaction Design Foundation. https://www.interaction-design.org/literature/article/3-reasons-why-accessible-design-is-good-for-all</span><br><br><span class='gerardo__footnotes'>2.Arijit. (2019, August 6). Accessibility before aesthetics. Medium. https://uxplanet.org/accessibility-before-aesthetics-9a0fb463e149</span>"
+    ],
+    "author": {
+      "name": "Gerardo Padilla",
+      "img": "URL",
+      "est": "5 minute read",
+      "position": "Designer",
+      "url": "URL",
+      "links": [
+        { "type": "linkedin", "url": "https://www.linkedin.com/in/ctheil/" },
+        { "type": "external", "url": "https://www.calebtheil.com" }
+      ]
+    }
+  },
+  {
+    "title": "Innovation Over Imitation",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__title-card.png?raw=true",
+    "titleCardProps": "normal",
+    "classParent": "beth",
+    "content": [
+      "So, you're a digital designer, navigating the turbulent waters of the creative world. You've spent countless hours perfecting your craft, learning the ins and outs of design software, and honing your skills to a razor's edge. Naturally, you want the world to see your genius. So, what do you do? You create a portfolio. And here is where things go wrong. You load up Pinterest, get inspired by the first few results of portfolio ideas, and design your own based on these works. While the designs themselves may be aesthetically pleasing and strongly made, they are heavily based in current trends in terms of typography, color palettes, and layouts. In the dynamic realm of digital design, where pixels dance to the rhythm of trends, it's tempting for designers to let their portfolios be driven by the ever-shifting currents of the design monoculture. After all, the allure of capturing the latest aesthetic zeitgeist and attracting clients seems irresistible. However, as we shall explore, the siren call of trends can lead designers into treacherous waters.  Digital designers should eschew the reliance on current trends in their portfolios. This practice not only threatens to instantly date their work but also limits their creative expression and individuality. Lets look further into the folly of trend-chasing portfolios and why the pursuit of timeless, personal creativity reigns supreme in the fast-paced world of digital design.",
+      "<div class='beth__flex'><img src='https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__img-1.png?raw=true' alt='figure 3.1'><div><span class='beth__subhead'>Trendy ≠ Timeless</span><p class='beth__subp'>Trendy ≠ Timeless One of the primary pitfalls of tethering your design portfolio to prevailing trends is the rapid aging of your work. The digital design world is a fickle beast, and what's 'in' today may well be 'out' tomorrow. By hinging your portfolio on these trends, you consign it to a perpetual cycle of updates, leaving little room for the cultivation of a lasting body of work. <p class='beth__subp'>As Todd Powers, a renowned digital designer, astutely noted in a recent interview with Creative Insights Magazine, 'A portfolio founded on trends resembles a house built on shifting sands. It lacks the solid foundation necessary for long-term success.' [1] Continually chasing trends becomes an exhausting endeavor, and in the process, your portfolio risks losing coherence and depth.</p> </div></div>",
+      "<span class='beth__subhead'>The Erosion of Individuality</span>",
+      "<p class='beth__subp'>Perhaps the most significant loss when designers anchor themselves to trends is the erosion of their individuality. Each designer brings a unique perspective and artistic voice to their work. By stifling this uniqueness in favor of trends, designers not only limit their creative potential but also rob themselves of the opportunity to stand out in a crowded field. </p><p> class='beth__subp'>In a TEDx talk titled 'Designing Beyond Trends,' graphic designer Sarah Mitchell emphasizes the importance of embracing your individuality in design: 'Your unique perspective is your superpower as a designer. Don't trade it for a fleeting trend. Make your work resonate with your voice, not someone else's.' [3] </p>",
+      "<div class='beth__flex'><div><span class='beth__subhead'>The Aesthetic Trap</span><p class='beth__subp'>Designers who tether themselves to trendy aesthetics may inadvertently find themselves attracting clients solely based on these superficial design elements. In such cases, the work takes precedence over the designer's personal passion or creative vision. This not only restricts the variety of projects that come your way but also perpetuates the cycle of creating work that conforms to current design standards rather than your own unique style.</p><p class='beth__subp'>As Carol Reynolds, a seasoned design consultant, puts it, 'When clients hire you for your ability to mimic trends, they pigeonhole your talents. They're not interested in your individuality; they want a clone of the prevailing trend. This restricts your creative growth and professional opportunities.' [2] In essence, relying on trends can make designers disposable commodities in a saturated market.</p></div><img src='https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__img-2.png?raw=true' alt='figure 3.2'></div>",
+      "<span class='beth__subhead'>Conslusion</span>",
+      "In conclusion, digital designers should resist the seductive allure of the design monoculture and avoid constructing their portfolios on the shifting sands of current trends. While trends may offer temporary appeal and a sense of conformity, they ultimately lead to portfolios that are ephemeral, limiting, and devoid of individuality. Instead, designers should prioritize their unique style, creative passions, and personal voice in their portfolios. This approach not only creates timeless work but also ensures that designers stand out as distinctive voices in the ever-evolving world of digital design. In the words of legendary designer Massimo Vignelli, 'Styles come and go. Good design is a language, not a style.' So, let your portfolio speak your language, not the language of trends.",
+      "<hr class='beth__line'>",
+      "<div class='beth__footnotes'><p class='beth__foot'>References</p><p class='beth__foot'>Todd Powers, interview with Creative Insights Magazine, August 2022.</p><p class='beth__foot'>Carol Reynolds, 'Designing Your Career: Navigating the Pitfalls of Trend-Based Portfolios,' DesignWorld, May 2021.</p><p class='beth__foot'>Sarah Mitchell, 'Designing Beyond Trends,' TEDx Talk, July 2020.</p></div>"
+    ],
+    "author": {
+      "name": "Elizabeth Walkins",
+      "img": "URL",
+      "est": "5 minute read",
+      "position": "Designer",
+      "url": "URL",
+      "links": [
+        { "type": "linkedin", "url": "https://www.linkedin.com/in/ctheil/" },
+        { "type": "external", "url": "https://www.calebtheil.com" }
+      ]
+    }
+  }
+]

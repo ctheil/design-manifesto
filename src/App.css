@@ -81,6 +81,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 10rem;
 }
 .content__box {
   flex: 0.5;
@@ -108,13 +109,13 @@ body {
   padding: 0rem 1rem;
   font-weight: 400;
 }
-.content__p strong,
-.content__p em,
-.content__p blockquote {
+.content__p--strong,
+.content__p--em,
+.content__p--quote {
   color: #7efcc7;
 }
 
-.content__p blockquote {
+.content__p--quote {
   text-indent: 0;
   font-size: 1.4rem;
   font-weight: 200;
@@ -124,18 +125,12 @@ body {
   text-indent: 0;
   margin: 3rem 0 0 0;
 }
-.content__p span {
+.content__p--subhead {
   font-size: 1.6rem;
   font-weight: 200;
   margin: 3rem 0 0 0;
   color: #7efcc7;
   font-family: "Playfair Dispaly", serif;
-}
-.content__p--strong {
-  font-size: 2rem;
-}
-.content__p--strong {
-  font-size: 2rem;
 }
 .card__box {
   flex: 0.5;
@@ -191,7 +186,7 @@ body {
   color: #eee;
 }
 .author__name--link {
-    cursor: pointer;
+  cursor: pointer;
 }
 .author__name:hover,
 .author__name--link:hover {
