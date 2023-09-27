@@ -1,0 +1,69 @@
+@import url("https://use.typekit.net/juy7bti.css");
+
+.mel p,
+.mel h2,
+.mel h3,
+.mel h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+#yellow {
+  color: #fbac18;
+}
+#green {
+  color: #75bb43;
+}
+#pink {
+  color: #ff98a4;
+}
+
+.mel h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 36px;
+}
+.mel .author__name--link {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #ff98a4;
+}
+
+.mel p {
+  text-indent: 0;
+  line-height: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+.mel__subhead {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.mel__quote {
+  text-indent: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  color: #aed7ff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.mel__h4 {
+  font-size: 16px;
+}
+.mel__img--box {
+  width: 100%;
+}
+.mel__img--box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.mel__img--box figcaption {
+  font-family: "proxima-nova", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+
+}

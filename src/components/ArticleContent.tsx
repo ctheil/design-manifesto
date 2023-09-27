@@ -1,6 +1,7 @@
 import "../App.css";
 import "../styles/gerardo.css";
 import "../styles/beth.css";
+import "../styles/mel.css";
 import Author from "./Author";
 type ContentProps = {
   content: string[];
