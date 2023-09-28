@@ -15,6 +15,7 @@ type ArticleProps = {
   titleCard: string;
   titleCardProps: "unique" | "normal";
   classParent: string;
+  anchor: string;
 };
 
 const Article = ({
@@ -25,6 +26,7 @@ const Article = ({
   titleCard,
   titleCardProps,
   classParent,
+  anchor,
 }: ArticleProps) => {
   const divRef = useRef(null);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -90,8 +92,13 @@ const Article = ({
     );
   }, [imageLoaded, yValue]);
 
+  console.log(anchor);
   return (
-    <div ref={divRef} className={`article__container ${classParent}`}>
+    <div
+      id={anchor}
+      ref={divRef}
+      className={`article__container ${classParent}`}
+    >
       <TitleCard
         img={titleCard}
         config={titleCardProps}

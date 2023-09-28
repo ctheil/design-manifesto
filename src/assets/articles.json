@@ -4,6 +4,7 @@
     "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/calebtheil__title-card_backdrop.jpeg?raw=true",
     "titleCardProps": "unique",
     "classParent": "caleb",
+    "anchor": "a0",
     "content": [
       "In the realm of User Experience (UX) design, there&apos;s a palpable trend towards homogeneity. Software interfaces increasingly look and feel identical, as if carved from the same digital block. This seems efficient, but at what cost? This essay poses a <strong class='content__p--strong'>central question</strong>: What if the objective of UX design isn&apos;t to solve problems but to <em class='content__p--em'>create</em> them?",
 
@@ -40,6 +41,7 @@
     "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/gerardo__title-card.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "gerardo",
+    "anchor": "a1",
     "content": [
       "Designers should believe that design should be a harmonious blend of aesthetics and accessibility, rejecting the notion that we must sacrifice aesthetics in order to please everyone aesthetically. In a world where aesthetics and accessibility coexist, we champion the idea that inclusive design enhances user experiences, fosters innovation, and benefits everyone.",
       "<div class='gerardo__flex'><div class='gerardo__img'><img src='https://raw.githubusercontent.com/ctheil/design-manifesto/4a161c323f10c2655ae80eb71bba632bb73fdfad/src/assets/gerardo__img-1.svg' alt='touch'/></div><div><h3 class='gerardo__subhead'>Aesthetics Fuel Engagement and Delight:</h3><br>Aesthetics are the soul of design, captivating users attention and sparking emotional connections. We acknowledge that visually pleasing designs hold the power to engage, inspire, and delight. By embracing aesthetics in design, we create interfaces that users genuinely enjoy interacting with, enhancing their overall experience. The allure of aesthetics catalyzes user engagement, making information more accessible and memorable.1</div></div>",
@@ -72,6 +74,7 @@
     "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__title-card.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "beth",
+    "anchor": "a2",
     "content": [
       "So, you&apos;re a digital designer, navigating the turbulent waters of the creative world. You&apos;ve spent countless hours perfecting your craft, learning the ins and outs of design software, and honing your skills to a razor&apos;s edge. Naturally, you want the world to see your genius. So, what do you do? You create a portfolio. And here is where things go wrong. You load up Pinterest, get inspired by the first few results of portfolio ideas, and design your own based on these works. While the designs themselves may be aesthetically pleasing and strongly made, they are heavily based in current trends in terms of typography, color palettes, and layouts. In the dynamic realm of digital design, where pixels dance to the rhythm of trends, it&apos;s tempting for designers to let their portfolios be driven by the ever-shifting currents of the design monoculture. After all, the allure of capturing the latest aesthetic zeitgeist and attracting clients seems irresistible. However, as we shall explore, the siren call of trends can lead designers into treacherous waters.  Digital designers should eschew the reliance on current trends in their portfolios. This practice not only threatens to instantly date their work but also limits their creative expression and individuality. Lets look further into the folly of trend-chasing portfolios and why the pursuit of timeless, personal creativity reigns supreme in the fast-paced world of digital design.",
       "<div class='beth__flex'><img src='https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__img-1.png?raw=true' alt='figure 3.1'><div><h3 class='beth__subhead'>Trendy ≠ Timeless</h3><p class='beth__subp'>Trendy ≠ Timeless One of the primary pitfalls of tethering your design portfolio to prevailing trends is the rapid aging of your work. The digital design world is a fickle beast, and what&apos;s &apos;in&apos; today may well be &apos;out&apos; tomorrow. By hinging your portfolio on these trends, you consign it to a perpetual cycle of updates, leaving little room for the cultivation of a lasting body of work. <p class='beth__subp'>As Todd Powers, a renowned digital designer, astutely noted in a recent interview with Creative Insights Magazine, &apos;A portfolio founded on trends resembles a house built on shifting sands. It lacks the solid foundation necessary for long-term success.&apos; [1] Continually chasing trends becomes an exhausting endeavor, and in the process, your portfolio risks losing coherence and depth.</p> </div></div>",
@@ -100,6 +103,7 @@
     "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/mel_title-card.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "mel",
+    "anchor": "a3",
     "content": [
       "In today’s digital landscape, where sleek and polished websites often reign supreme, a peculiar paradox emerges - the curious case of ugly website design. In an era where aesthetics frequently dominate the discourse regarding web design, it may seem counterintuitive to celebrate the unrefined, the chaotic, and the seemingly haphazard. The truth is that sometimes, what appears ugly at first glance can be a stroke of genius when capturing a specific audience's hearts and minds.",
       "Through this exploration, we aim to highlight that beneath the surface of seemingly chaotic design choices lies a profound strategy that resonates with specific users, builds trust, and ultimately achieves its objectives. This article uncovers the secrets of how ‘ugly’ design can be a remarkably appropriate and practical choice, ultimately proving that beauty indeed lies in the eye of the beholder, even in the world of web design.",

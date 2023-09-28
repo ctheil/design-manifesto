@@ -4,12 +4,17 @@
   background-clip: red;
   height: 100%;
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 .main {
   padding: 1rem 3rem;
@@ -75,7 +80,7 @@ body {
 }
 
 .article__container {
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: row;
   max-width: 1440px;
@@ -234,6 +239,60 @@ body {
 .socials a:hover,
 .socials a:active {
   color: #7efcc7;
+}
+
+/* NAV */
+.nav__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  content: "";
+  background-color: #121212;
+  z-index: 2;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  z-index: 2;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav__logo--link {
+  font-weight: 800;
+  color: #bbb;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.nav__logo--link:hover {
+    color: #eee;
+}
+.nav__logo {
+}
+.nav__item {
+}
+.nav__link {
+  text-decoration: none;
+  color: #bbb;
+}
+.nav__link:active {
+  color: blue;
+}
+.nav__link:hover {
+  color: #eee;
 }
 
 @media only screen and (max-width: 900px) {
