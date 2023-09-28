@@ -304,6 +304,21 @@ html {
   height: 4rem;
 }
 
+/* JUMP STYLES */
+.jump__container {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  background-color: #bbb;
+  padding: 0.5rem 0.7rem;
+  border-radius: 2px;
+  color: #242424;
+}
+.jump__container a {
+  color: #242424;
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 900px) {
   .article__container {
     flex-direction: column;

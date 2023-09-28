@@ -13,7 +13,7 @@ const Nav = ({ articles }: NavProps) => {
         </a>
         <ul className="nav__list">
           {articles.map((a, idx) => (
-            <NavItem idx={idx} a={a} />
+            <NavItem key={idx} idx={idx} a={a} />
           ))}
         </ul>
       </nav>

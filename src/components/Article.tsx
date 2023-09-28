@@ -7,15 +7,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { IArticle } from "./article.types";
 
-const Article = ({
-  content,
-  title,
-  author,
-  titleCard,
-  titleCardProps,
-  classParent,
-  anchor,
-}: IArticle) => {
+type ArticleProps = {
+  handleSetCurrArticle: (arg0: string | null) => void;
+  article: IArticle;
+};
+
+const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
   const divRef = useRef(null);
   const [imageLoaded, setImageLoaded] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +50,14 @@ const Article = ({
       },
       {
         y: `${yVal}px`,
+        onStart: () => {
+          handleSetCurrArticle(article.classParent);
+          console.log(article.classParent, "start");
+        },
+        onComplete: () => {
+          handleSetCurrArticle(null);
+          console.log(null, "end");
+        },
         scrollTrigger: {
           trigger: (element as Element).querySelector<HTMLElement>(
             ".content__box",
@@ -60,27 +65,30 @@ const Article = ({
           start: "top top",
           end: "bottom center",
           scrub: true,
-          //
           // markers: true,
           toggleActions: "restart pause resume pause",
         },
       },
     );
-  }, [imageLoaded]);
+  }, [imageLoaded, article.classParent, handleSetCurrArticle]);
 
   return (
     <div
-      id={anchor}
+      id={article.anchor}
       ref={divRef}
-      className={`article__container ${classParent}`}
+      className={`article__container ${article.classParent}`}
     >
       <TitleCard
-        img={titleCard}
-        config={titleCardProps}
-        alt={`${author.name}-title-card`}
+        img={article.titleCard}
+        config={article.titleCardProps}
+        alt={`${article.author.name}-title-card`}
         handleImageLoad={handleImageLoad}
       />
-      <ArticleContent title={title} author={author} content={content} />
+      <ArticleContent
+        title={article.title}
+        author={article.author}
+        content={article.content}
+      />
     </div>
   );
 };
