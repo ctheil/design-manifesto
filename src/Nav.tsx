@@ -1,15 +1,9 @@
-import { useState } from "react";
-import Articles from "./assets/articles.json";
 import NavItem from "./components/NavItem";
-const Nav = () => {
-  const [hover, setHover] = useState(false);
-
-  const handleMouseOver = () => {
-    setHover(true);
-  };
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+import { IArticle } from "./components/article.types";
+type NavProps = {
+  articles: IArticle[];
+};
+const Nav = ({ articles }: NavProps) => {
   return (
     <>
       <div className="nav__background"></div>
@@ -18,9 +12,9 @@ const Nav = () => {
           <p className="nav__logo">DDFTM</p>
         </a>
         <ul className="nav__list">
-          {Articles.map((a, idx) => {
-            return <NavItem idx={idx} a={a} />;
-          })}
+          {articles.map((a, idx) => (
+            <NavItem idx={idx} a={a} />
+          ))}
         </ul>
       </nav>
     </>

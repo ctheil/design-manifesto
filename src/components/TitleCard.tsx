@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import "../App.css";
 import "../Modal.css";
@@ -7,7 +6,7 @@ type Props = {
   img: string;
   alt: string;
   config: string;
-  handleImageLoad: Function;
+  handleImageLoad: () => void;
 };
 const TitleCard = (props: Props) => {
   const [touched, setTouched] = useState(false);

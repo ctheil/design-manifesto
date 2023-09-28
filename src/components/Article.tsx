@@ -5,22 +5,9 @@ import TitleCard from "./TitleCard";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Author } from "./Author";
-
-type ArticleProps = {
-  key: number;
-  content: string[];
-  title: string;
-  author: Author;
-  titleCard: string;
-  titleCardProps: "unique" | "normal";
-  classParent: string;
-  anchor: string;
-  icon: string;
-};
+import { IArticle } from "./article.types";
 
 const Article = ({
-  key,
   content,
   title,
   author,
@@ -28,25 +15,13 @@ const Article = ({
   titleCardProps,
   classParent,
   anchor,
-}: ArticleProps) => {
+}: IArticle) => {
   const divRef = useRef(null);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [yValue, setYValue] = useState(0);
   gsap.registerPlugin(ScrollTrigger);
 
   const handleImageLoad = () => {
-    console.log("image loaded");
     setImageLoaded(true);
-    // const element = divRef.current;
-    // const contentBoxHeight = (element as Element).querySelector<HTMLElement>(
-    //   ".content__box",
-    // ).offsetHeight;
-    // const imageHeight = (element as Element).querySelector<HTMLElement>(
-    //   ".card__img",
-    // ).offsetHeight;
-    //
-    // const yVal = contentBoxHeight - imageHeight;
-    // setYValue(yVal);
     ScrollTrigger.refresh();
   };
 
@@ -67,9 +42,8 @@ const Article = ({
     ).offsetHeight;
 
     const yVal = contentBoxHeight - imageHeight;
-    // setYValue(yVal);
 
-    console.log(`${author.name}: `, yVal);
+    // console.log(`${author.name}: `, yVal);
 
     gsap.fromTo(
       (element as Element).querySelector(".card__img"),
@@ -91,9 +65,8 @@ const Article = ({
         },
       },
     );
-  }, [imageLoaded, yValue]);
+  }, [imageLoaded]);
 
-  console.log(anchor);
   return (
     <div
       id={anchor}

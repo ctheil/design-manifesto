@@ -3,16 +3,11 @@ import "../styles/gerardo.css";
 import "../styles/beth.css";
 import "../styles/mel.css";
 import Author from "./Author";
+import { AuthorType } from "./article.types";
 type ContentProps = {
   content: string[];
   title: string;
-  author: {
-    name: string;
-    img: string;
-    est: string;
-    links: { url: string; type: "linkedin" | "external" }[];
-    position: string;
-  };
+  author: AuthorType;
 };
 
 const ArticleContent = ({ content, title, author }: ContentProps) => {

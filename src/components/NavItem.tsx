@@ -1,10 +1,11 @@
 import { useState } from "react";
 import melIcon from "../assets/nav-icons/mel__nav-icon.png";
 import "../App.css";
+import { IArticle } from "./article.types";
 
 type Props = {
   idx: number;
-  a: { anchor: string; icon: string };
+  a: IArticle;
 };
 
 const NavItem = (props: Props) => {

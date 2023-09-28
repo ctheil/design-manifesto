@@ -7,7 +7,7 @@ import { Author } from "./components/Author";
 function App() {
   return (
     <section className="main">
-      <Nav />
+      <Nav articles={Articles} />
       {Articles.map((a, i) => {
         return (
           <Article
