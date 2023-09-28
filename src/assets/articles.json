@@ -91,14 +91,20 @@
       "<div class='beth__footnotes'><p class='beth__foot'>References</p><p class='beth__foot'>Todd Powers, interview with Creative Insights Magazine, August 2022.</p><p class='beth__foot'>Carol Reynolds, &apos;Designing Your Career: Navigating the Pitfalls of Trend-Based Portfolios,&apos; DesignWorld, May 2021.</p><p class='beth__foot'>Sarah Mitchell, &apos;Designing Beyond Trends,&apos; TEDx Talk, July 2020.</p></div>"
     ],
     "author": {
-      "name": "Elizabeth Walkins",
+      "name": "Elisabeth Watkins",
       "img": "URL",
       "est": "5 minute read",
-      "position": "Designer",
-      "url": "URL",
+      "position": "Product Designer",
+      "url": "https://www.linkedin.com/in/elisabethwatkins/",
       "links": [
-        { "type": "linkedin", "url": "https://www.linkedin.com/in/ctheil/" },
-        { "type": "external", "url": "https://www.calebtheil.com" }
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/elisabethwatkins/"
+        },
+        {
+          "type": "external",
+          "url": "https://bethwatkins2003.wixsite.com/elielisabeth-watkins"
+        }
       ]
     }
   },
