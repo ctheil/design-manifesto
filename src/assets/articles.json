@@ -6,7 +6,7 @@
     "classParent": "caleb",
     "anchor": "a0",
     "primaryColor": "#7efcc7",
-    "icon": "url",
+    "icon": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/nav-icons/mel__nav-icon.png?raw=true",
     "content": [
       "In the realm of User Experience (UX) design, there&apos;s a palpable trend towards homogeneity. Software interfaces increasingly look and feel identical, as if carved from the same digital block. This seems efficient, but at what cost? This essay poses a <strong class='content__p--strong'>central question</strong>: What if the objective of UX design isn&apos;t to solve problems but to <em class='content__p--em'>create</em> them?",
 

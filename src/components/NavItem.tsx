@@ -1,4 +1,5 @@
 import { useState } from "react";
+import melIcon from "../assets/nav-icons/mel__nav-icon.png";
 import "../App.css";
 
 type Props = {
@@ -28,7 +29,7 @@ const NavItem = (props: Props) => {
               <img
                 alt={`Article ${props.idx + 1} icon`}
                 className="nav__icon--img"
-                src={props.a.icon}
+                src={melIcon}
               />
             </a>
           </div>
