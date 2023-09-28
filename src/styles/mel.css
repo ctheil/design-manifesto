@@ -33,6 +33,7 @@
   line-height: normal;
   font-weight: 300;
   font-size: 16px;
+  max-width: 100%;
 }
 .mel__subhead {
   font-size: 24px;
@@ -65,5 +66,4 @@
   font-family: "proxima-nova", sans-serif;
   font-style: italic;
   font-size: 12px;
-
 }

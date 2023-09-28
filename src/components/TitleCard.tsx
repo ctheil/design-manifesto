@@ -1,13 +1,15 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import "../App.css";
 import "../Modal.css";
 
-type CardProps = {
+type Props = {
   img: string;
   alt: string;
   config: string;
+  handleImageLoad: Function;
 };
-const TitleCard = (props: CardProps) => {
+const TitleCard = (props: Props) => {
   const [touched, setTouched] = useState(false);
   const [cords, setCords] = useState([50, 50]);
   const [open, setOpen] = useState(true);
@@ -39,7 +41,12 @@ const TitleCard = (props: CardProps) => {
   return (
     <div className={`card__box relative`}>
       <div className="card__img">
-        <img className="card__img" src={props.img} alt={props.alt} />
+        <img
+          onLoad={props.handleImageLoad}
+          className="card__img"
+          src={props.img}
+          alt={props.alt}
+        />
         {props.config === "unique" && open && (
           <>
             <div
