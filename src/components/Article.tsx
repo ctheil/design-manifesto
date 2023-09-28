@@ -34,12 +34,13 @@ const Article = ({
     if (!element) {
       return;
     }
+
     const contentBoxHeight = (element as Element).querySelector<HTMLElement>(
       ".content__box",
-    ).offsetHeight;
+    )!.offsetHeight;
     const imageHeight = (element as Element).querySelector<HTMLElement>(
       ".card__img",
-    ).offsetHeight;
+    )!.offsetHeight;
 
     const yVal = contentBoxHeight - imageHeight;
 
