@@ -16,6 +16,7 @@ type ArticleProps = {
   titleCardProps: "unique" | "normal";
   classParent: string;
   anchor: string;
+  icon: string;
 };
 
 const Article = ({

@@ -278,12 +278,13 @@ html {
   transition: all 0.2s;
 }
 .nav__logo--link:hover {
-    color: #eee;
+  color: #eee;
 }
 .nav__logo {
 }
 .nav__item {
 }
+
 .nav__link {
   text-decoration: none;
   color: #bbb;
@@ -293,6 +294,11 @@ html {
 }
 .nav__link:hover {
   color: #eee;
+}
+.nav__item {
+  padding: 0 1rem;
+}
+.nav__box {
 }
 
 @media only screen and (max-width: 900px) {
