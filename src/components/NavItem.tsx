@@ -17,46 +17,64 @@ const NavItem = (props: Props) => {
     setHover(false);
   };
 
-  if (hover) {
-    return (
-      <>
-        <div
-          className="nav__box"
-          onMouseOver={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="nav__icon">
-            <a href={`#${props.a.anchor}`}>
-              <img
-                alt={`Article ${props.idx + 1} icon`}
-                className="nav__icon--img"
-                src={melIcon}
-              />
-            </a>
-          </div>
-        </div>
-      </>
-    );
-  } else {
-    return (
-      <div
-        className="nav__box"
+  // if (hover) {
+  //   return (
+  //     <>
+  //       <div
+  //         className="nav__box"
+  //         onMouseOver={handleMouseOver}
+  //         onMouseLeave={handleMouseLeave}
+  //       >
+  //         <div className="nav__icon">
+  //           <a href={`#${props.a.anchor}`}>
+  //             <img
+  //               alt={`Article ${props.idx + 1} icon`}
+  //               className="nav__icon--img"
+  //               src={melIcon}
+  //             />
+  //           </a>
+  //         </div>
+  //       </div>
+  //     </>
+  //   );
+  // } else {
+  //   return (
+  //     <div
+  //       className="nav__box"
+  //       onMouseOver={handleMouseOver}
+  //       onMouseLeave={handleMouseLeave}
+  //     >
+  //       <li
+  //         onMouseOver={handleMouseOver}
+  //         onMouseLeave={handleMouseLeave}
+  //         key={props.idx}
+  //         className="nav__item"
+  //       >
+  //         <a className="nav__link" href={`#${props.a.anchor}`}>{`A${
+  //           props.idx + 1
+  //         }`}</a>
+  //       </li>
+  //     </div>
+  //   );
+  // }
+  return (
+    <div
+      className="nav__box"
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
+      <li
         onMouseOver={handleMouseOver}
         onMouseLeave={handleMouseLeave}
+        key={props.idx}
+        className="nav__item"
       >
-        <li
-          onMouseOver={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-          key={props.idx}
-          className="nav__item"
-        >
-          <a className="nav__link" href={`#${props.a.anchor}`}>{`A${
-            props.idx + 1
-          }`}</a>
-        </li>
-      </div>
-    );
-  }
+        <a className="nav__link" href={`#${props.a.anchor}`}>{`${
+          props.idx + 1
+        }`}</a>
+      </li>
+    </div>
+  );
 };
 
 export default NavItem;

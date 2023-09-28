@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,900;1,100;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap");
 #root {
   width: 100%;
   background-clip: red;
@@ -12,7 +14,8 @@ body {
   height: 100%;
   padding-top: 3rem;
   scroll-behavior: smooth;
-  overscroll-behavior: none;
+  overscroll-behavior: hidden;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -81,7 +84,7 @@ html {
   padding-top: 5rem;
   display: flex;
   flex-direction: row;
-  max-width: 1440px;
+  max-width: 1340px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 10rem;
@@ -260,7 +263,7 @@ html {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1240px;
   z-index: 2;
 }
 
@@ -274,6 +277,12 @@ html {
   color: #bbb;
   text-decoration: none;
   transition: all 0.2s;
+}
+.nav a.anchor {
+  top: -400px;
+}
+.nav__logo--link a.anchor {
+  top: -400px;
 }
 .nav__logo--link:hover {
   color: #eee;
@@ -323,32 +332,47 @@ html {
 .landing__upper {
   background-color: #fff;
   width: 100vw;
-  height: 80vh;
+  height: 101vh;
   position: relative;
 }
 .landing__upper h1 {
   color: #242424;
   margin: 0;
   position: absolute;
-  bottom: -1.4rem;
+  bottom: -1.2rem;
   width: 100%;
-  font-size: 5rem;
+  font-size: 6rem;
   text-wrap: nowrap;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
   font-style: italic;
+  font-family: "Anton", sans-serif;
 }
 .landing__lower {
+  padding-top: 2rem;
   background-color: #242424;
 }
 .landing__p {
-  width: 100%;
-  text-align: center;
+  max-width: 1340px;
+  width: 70ch;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 152px;
+  margin-top: 4rem;
+  margin: 4rem auto 2rem auto;
+  text-align: center;
+}
+.landing__p--h2 {
+  font-size: 3.7rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.7;
+  padding: 2rem 0;
+}
+.landing__p p {
+  text-indent: 0;
+  margin: 0 auto 4rem auto;
 }
 
 @media only screen and (max-width: 900px) {
