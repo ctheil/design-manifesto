@@ -12,12 +12,10 @@ body {
   height: 100%;
   padding-top: 3rem;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 html {
   scroll-behavior: smooth;
-}
-.main {
-  padding: 1rem 3rem;
 }
 .h1 {
   margin: 0rem 0rem 1rem 0rem;
@@ -317,6 +315,40 @@ html {
 .jump__container a {
   color: #242424;
   font-size: 16px;
+}
+
+/* LANDING STYLES */
+.landing {
+}
+.landing__upper {
+  background-color: #fff;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+.landing__upper h1 {
+  color: #242424;
+  margin: 0;
+  position: absolute;
+  bottom: -1.4rem;
+  width: 100%;
+  font-size: 5rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+}
+.landing__lower {
+  background-color: #242424;
+}
+.landing__p {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 152px;
 }
 
 @media only screen and (max-width: 900px) {

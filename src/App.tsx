@@ -5,6 +5,7 @@ import Articles from "./assets/articles.json";
 import { IArticle } from "./components/article.types";
 import { useState } from "react";
 import Jump from "./components/Jump";
+import Landing from "./components/Landing";
 
 function App() {
   const [currArticle, setCurrArticle] = useState<null | string>(null);
@@ -16,6 +17,10 @@ function App() {
   return (
     <section className="main">
       <Nav articles={Articles as IArticle[]} />
+      <Landing />
+      {/*
+        JUMP ELEMENT W/ currArticle
+      */}
       {Articles.map((a, i) => {
         return (
           <Article
@@ -25,9 +30,6 @@ function App() {
           />
         );
       })}
-      {/*
-        JUMP ELEMENT W/ currArticle
-      */}
       <Jump currArticle={currArticle} articles={Articles as IArticle[]} />
     </section>
   );
