@@ -15,6 +15,7 @@ export interface IArticle {
   author: AuthorType;
   title: string;
   titleCard: string;
+  titleCardSM: string;
   titleCardProps: "unique" | "normal";
   classParent: string;
   anchor: string;

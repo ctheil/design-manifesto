@@ -70,7 +70,9 @@ const TitleCard = (props: Props) => {
                 </h3>
               </div>
               <div className="modal__content">
-                <p className="modal__p">lorem ipsum</p>
+                <p className="modal__p">
+                  Designers, stop streamlining and start disrupting.
+                </p>
               </div>
               <div className="modal__actions">
                 <button onClick={handleClose} className="modal__sub-action">

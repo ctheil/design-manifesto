@@ -332,15 +332,22 @@ html {
 .landing__upper {
   background-color: #fff;
   width: 100vw;
-  height: 101vh;
+  height: 120vh;
   position: relative;
+}
+.landing__heading {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .landing__upper h1 {
   color: #242424;
   margin: 0;
-  position: absolute;
-  bottom: -1.2rem;
-  width: 100%;
   font-size: 6rem;
   text-wrap: nowrap;
   text-transform: uppercase;
@@ -348,6 +355,23 @@ html {
   text-align: center;
   font-style: italic;
   font-family: "Anton", sans-serif;
+}
+.landing__upper h2 {
+  color: #242424;
+  margin: 0;
+  font-size: 2.28rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+  font-family: "Anton", sans-serif;
+}
+
+.intro__line {
+  border: none;
+  width: 100vw;
+  margin-bottom: 5rem;
 }
 .landing__lower {
   padding-top: 2rem;
@@ -373,6 +397,51 @@ html {
 .landing__p p {
   text-indent: 0;
   margin: 0 auto 4rem auto;
+}
+.landing__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+}
+
+.landing__poll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+}
+
+.poll {
+  color: #242424;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #efefef;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  border: solid 1px #fff;
+}
+.poll__answer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.poll__answer a {
+  width: 100%;
+  display: block;
+}
+.poll__answer--button {
+  background-color: #ddd;
+  width: 100%;
+}
+.selected {
+  background-color: #bbb;
+  color: #fff;
 }
 
 @media only screen and (max-width: 900px) {
