@@ -41,8 +41,6 @@ const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
 
     const yVal = contentBoxHeight - imageHeight;
 
-    // console.log(`${author.name}: `, yVal);
-
     gsap.fromTo(
       (element as Element).querySelector(".card__img"),
       {
@@ -51,14 +49,10 @@ const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
       {
         y: `${yVal}px`,
         onStart: () => {
-          console.log("setting")
           handleSetCurrArticle(article.classParent);
-          console.log(article.classParent, "start");
         },
         onComplete: () => {
-          console.log("setting")
           handleSetCurrArticle(null);
-          console.log(null, "end");
         },
         scrollTrigger: {
           trigger: (element as Element).querySelector<HTMLElement>(

@@ -17,7 +17,6 @@ const Poll = (props: PollProps) => {
   const [selected, setSelected] = useState<null | string>(null);
   const handleSelect = (target: string) => {
     setSelected(target);
-    console.log(target === mockPoll.incorrect);
     if (target === mockPoll.incorrect) {
       props.handleIncorrect();
     } else {

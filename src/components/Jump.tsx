@@ -20,7 +20,6 @@ const Jump = ({ articles, currArticle }: JumpProps) => {
 
     setNext(`a${currIdx + 1}`);
   }, [currArticle, articles]);
-  console.log(next);
 
   if (next === null) {
     return <></>;

@@ -11,10 +11,8 @@ function App() {
   const [currArticle, setCurrArticle] = useState<null | string>(null);
 
   const handleSetCurrArticle = (_currArticle: string | null) => {
-    console.log("Set curr article");
     setCurrArticle(_currArticle);
   };
-  console.log("APP CURR", currArticle);
 
   return (
     <section className="main">

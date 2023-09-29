@@ -7,7 +7,6 @@ const useWindowSize = () => {
     const handleSize = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      console.log("before", windowSize);
       setWindowSize({
         width: width,
         height: height,
