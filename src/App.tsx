@@ -11,16 +11,15 @@ function App() {
   const [currArticle, setCurrArticle] = useState<null | string>(null);
 
   const handleSetCurrArticle = (_currArticle: string | null) => {
+    console.log("Set curr article");
     setCurrArticle(_currArticle);
   };
+  console.log("APP CURR", currArticle);
 
   return (
     <section className="main">
       <Nav articles={Articles as IArticle[]} />
       <Landing />
-      {/*
-        JUMP ELEMENT W/ currArticle
-      */}
       {Articles.map((a, i) => {
         return (
           <Article

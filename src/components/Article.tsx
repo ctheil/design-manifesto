@@ -51,10 +51,12 @@ const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
       {
         y: `${yVal}px`,
         onStart: () => {
+          console.log("setting")
           handleSetCurrArticle(article.classParent);
           console.log(article.classParent, "start");
         },
         onComplete: () => {
+          console.log("setting")
           handleSetCurrArticle(null);
           console.log(null, "end");
         },

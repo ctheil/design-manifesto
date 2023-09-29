@@ -11,7 +11,7 @@ const Jump = ({ articles, currArticle }: JumpProps) => {
 
   useEffect(() => {
     if (!currArticle) {
-      setNext(null);
+      return setNext(null);
     }
     const currIdx = articles.findIndex((a) => a.classParent === currArticle);
     if (currIdx + 1 >= articles.length) {
@@ -20,8 +20,9 @@ const Jump = ({ articles, currArticle }: JumpProps) => {
 
     setNext(`a${currIdx + 1}`);
   }, [currArticle, articles]);
+  console.log(next);
 
-  if (!next) {
+  if (next === null) {
     return <></>;
   } else {
     return (

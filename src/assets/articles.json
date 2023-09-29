@@ -2,6 +2,7 @@
   {
     "title": "UX as a Playground of Challenges",
     "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/calebtheil__title-card_backdrop.jpeg?raw=true",
+    "titleCardSM": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/caleb__titleCardSM.png?raw=true",
     "titleCardProps": "unique",
     "classParent": "caleb",
     "anchor": "a0",
@@ -40,7 +41,8 @@
   },
   {
     "title": "Accessibility VS Aesthetics",
-    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/gerardo__title-card.png?raw=true",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/gerardo__titleCardSM.png?raw=true",
+    "titleCardSM": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/gerardo__titleCardSM.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "gerardo",
     "anchor": "a1",
@@ -75,7 +77,8 @@
   },
   {
     "title": "Innovation Over Imitation",
-    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/beth__title-card.png?raw=true",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/beth__titleCardSM.png?raw=true",
+    "titleCardSM": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/beth__titleCardSM.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "beth",
     "anchor": "a2",
@@ -112,7 +115,8 @@
   },
   {
     "title": "Ugly Design is not Bad Design",
-    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/mel_title-card.png?raw=true",
+    "titleCard": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/mel__titleCardSM.png?raw=true",
+    "titleCardSM": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/title-cards/mel__titleCardSM.png?raw=true",
     "titleCardProps": "normal",
     "classParent": "mel",
     "anchor": "a3",

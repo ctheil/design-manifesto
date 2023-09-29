@@ -332,7 +332,7 @@ html {
 .landing__upper {
   background-color: #fff;
   width: 100vw;
-  height: 120vh;
+  height: 110vh;
   position: relative;
 }
 .landing__heading {
@@ -376,6 +376,10 @@ html {
 .landing__lower {
   padding-top: 2rem;
   background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .landing__p {
   max-width: 1340px;
@@ -402,7 +406,37 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 5rem;
+  padding: 0rem 5rem;
+  gap: 3rem;
+  width: 70%;
+  margin-bottom: 10rem;
+}
+.landing__card {
+  flex: 0.25;
+  width: 20%;
+  height: 25rem;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.landing__card--img-box {
+  max-height: 25rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.landing__card img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.landing__card figcaption {
+  color: #bbb;
+}
+.landing__card:hover {
+  color: #fff;
+  transform: translateY(-0.3rem);
 }
 
 .landing__poll {

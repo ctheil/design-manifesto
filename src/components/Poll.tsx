@@ -34,7 +34,7 @@ const Poll = (props: PollProps) => {
         <div className="poll__answer">
           {mockPoll.options.map((option, idx) => {
             return (
-              <a href="#intro">
+              <a key={idx} href="#intro">
                 <button
                   onClick={() => handleSelect(option)}
                   key={idx}
