@@ -20,4 +20,5 @@ export interface IArticle {
   classParent: string;
   anchor: string;
   icon?: string;
+  primaryColor: string;
 }

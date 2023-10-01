@@ -196,7 +196,8 @@ html {
 }
 .author__name:hover,
 .author__name--link:hover {
-  color: #7efcc7;
+  /* color: #7efcc7; */
+  color: inherit;
 }
 .author__est {
   margin: 0;
@@ -239,7 +240,7 @@ html {
 }
 .socials a:hover,
 .socials a:active {
-  color: #7efcc7;
+  color: inherit;
 }
 
 /* NAV */
@@ -551,11 +552,35 @@ html {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .content__title,
+  .content__p {
+    padding: 0;
+  }
   .content__title {
     font-size: 2rem;
   }
   .content__p {
-      font-size: 1rem;
+    font-size: 1rem;
+  }
+  blockquote {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+  }
+  .gerardo__flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gerardo__img {
+    padding: 0;
+  }
+  .gerardo__flex div {
+    width: 100% !important;
+  }
+  .beth__flex {
+    flex-direction: column;
   }
 }

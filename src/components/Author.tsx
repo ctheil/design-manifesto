@@ -19,8 +19,9 @@ export interface Author {
 
 type AuthorProps = {
   author: Author;
+  primaryColor: string;
 };
-const Author = ({ author }: AuthorProps) => {
+const Author = ({ author, primaryColor }: AuthorProps) => {
   return (
     <div className="author__box">
       <div className="author__img-container">
@@ -30,8 +31,8 @@ const Author = ({ author }: AuthorProps) => {
           className="author__img"
         />
       </div>
-      <div className="author__content">
-        <div className="author__name-box">
+      <div className="author__content" data-color={primaryColor}>
+        <div style={{ color: primaryColor }} className="author__name-box ">
           {author.url ? (
             <a target="_blank" href={author.url} className="author__name--link">
               {author.name}
@@ -41,7 +42,7 @@ const Author = ({ author }: AuthorProps) => {
           )}
           <p className="author__position">{author.position}</p>
         </div>
-        <div className="socials">
+        <div style={{ color: primaryColor }} className="socials">
           {author.links &&
             author.links.map((link, i) => {
               return (

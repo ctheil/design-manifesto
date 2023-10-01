@@ -65,13 +65,16 @@
     ],
     "author": {
       "name": "Gerardo Padilla",
-      "img": "URL",
+      "img": "https://github.com/ctheil/design-manifesto/blob/main/src/assets/authors/gerardo__author-img.jpeg?raw=true",
       "est": "5 minute read",
       "position": "Designer",
-      "url": "URL",
+      "url": "https://gerardosarts.co/",
       "links": [
-        { "type": "linkedin", "url": "https://www.linkedin.com/in/ctheil/" },
-        { "type": "external", "url": "https://www.calebtheil.com" }
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/gerardo-padilla-/"
+        },
+        { "type": "external", "url": "https://gerardosarts.co/" }
       ]
     }
   },

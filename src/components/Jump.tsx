@@ -22,7 +22,7 @@ const Jump = ({ articles, currArticle }: JumpProps) => {
   }, [currArticle, articles]);
 
   if (next === null) {
-    return <></>;
+    return;
   } else {
     return (
       <div className="jump__container">

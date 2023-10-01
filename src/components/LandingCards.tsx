@@ -4,7 +4,7 @@ const LandingCards = () => {
     <div className="landing__cards">
       {Articles.map((a, idx) => {
         return (
-          <div className="landing__card">
+          <div key={idx} className="landing__card">
             <a href={`#a${idx}`}>
               <div className="landing__card--img-box">
                 <img src={a.titleCardSM} alt={a.title} />

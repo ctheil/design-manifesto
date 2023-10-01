@@ -66,6 +66,9 @@ const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
         },
       },
     );
+    // return () => {
+    //   ScrollTrigger.refresh();
+    // };
   }, [imageLoaded, article.classParent, handleSetCurrArticle]);
 
   return (
@@ -84,6 +87,7 @@ const Article = ({ article, handleSetCurrArticle }: ArticleProps) => {
         title={article.title}
         author={article.author}
         content={article.content}
+        primaryColor={article.primaryColor}
       />
     </div>
   );

@@ -8,14 +8,20 @@ type ContentProps = {
   content: string[];
   title: string;
   author: AuthorType;
+  primaryColor: string;
 };
 
-const ArticleContent = ({ content, title, author }: ContentProps) => {
+const ArticleContent = ({
+  content,
+  title,
+  author,
+  primaryColor,
+}: ContentProps) => {
   return (
     <div className={`content__box`}>
       <>
         <h2 className="content__title">{title}</h2>
-        <Author author={author} />
+        <Author primaryColor={primaryColor} author={author} />
         <>
           {content.map((p, i) => (
             <p
