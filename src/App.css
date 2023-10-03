@@ -9,6 +9,9 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.caleb__footer {
+  font-style: italic;
+}
 
 body {
   width: 100%;
