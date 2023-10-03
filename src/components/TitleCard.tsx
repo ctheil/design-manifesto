@@ -65,9 +65,9 @@ const TitleCard = (props: Props) => {
               className="modal"
             >
               <div className="modal__heading">
-                <h3 className="modal__heading--h3">
+                <p className="modal__heading--h3">
                   UX as a Playground of Challenges
-                </h3>
+                </p>
               </div>
               <div className="modal__content">
                 <p className="modal__p">

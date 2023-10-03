@@ -56,6 +56,10 @@ html {
   background-repeat: no-repeat;
 }
 
+.modal__heading--h3 {
+  font-weight: 700;
+}
+
 .body {
   flex: 0.5;
 }

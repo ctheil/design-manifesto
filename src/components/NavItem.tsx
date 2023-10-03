@@ -8,13 +8,11 @@ type Props = {
 
 const NavItem = (props: Props) => {
   return (
-    <div className="nav__box">
-      <li className="nav__item">
-        <a className="nav__link" href={`#${props.a.anchor}`}>{`${
-          props.idx + 1
-        }`}</a>
-      </li>
-    </div>
+    <li className="nav__box">
+      <a className="nav__link" href={`#${props.a.anchor}`}>{`${
+        props.idx + 1
+      }`}</a>
+    </li>
   );
 };
 
