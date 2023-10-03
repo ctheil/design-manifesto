@@ -145,7 +145,7 @@ html {
 }
 .card__img {
   width: auto;
-  max-width: 60vh;
+  max-width: 40vh;
   margin: 0 auto;
 }
 
@@ -539,6 +539,7 @@ html {
   }
   .card__img {
     width: 100%;
+    max-width: 100%;
   }
   .card__box {
     width: 100%;
@@ -551,6 +552,7 @@ html {
   }
   .landing__p {
     margin: 0 auto;
+    padding: 0.5rem 1rem;
   }
 }
 
