@@ -180,6 +180,7 @@ html {
 }
 .author__position {
   margin: 0;
+  color: #bbb;
 }
 .author__name-box {
   display: flex;

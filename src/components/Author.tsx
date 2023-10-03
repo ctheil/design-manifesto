@@ -46,7 +46,12 @@ const Author = ({ author, primaryColor }: AuthorProps) => {
           {author.links &&
             author.links.map((link, i) => {
               return (
-                <a target="_blank" key={i} href={link.url}>
+                <a
+                  aria-label={link.type}
+                  target="_blank"
+                  key={i}
+                  href={link.url}
+                >
                   {link.type === "linkedin" && (
                     <AiFillLinkedin className="author__icon" />
                   )}
